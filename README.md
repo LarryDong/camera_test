@@ -11,8 +11,9 @@ chmod +x ./enable_i2c_vc.sh
 ```
 并进行reboot
 
-3. 
+3. 编译RPI文件
 ```bash
+cd RPI
 make install
 make clean && make
 ```
