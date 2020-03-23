@@ -4,27 +4,25 @@
 
 1. 解压RPI.zip
 2.  启动IIC通信
-
 ```bash
 cd RPI
 chmod +x ./enable_i2c_vc.sh
 ./enable_i2c_vc.sh
 ```
-
 并进行reboot
 
-3. ```bash
-   make install
-   make clean && make
-   ```
+3. 
+```bash
+make install
+make clean && make
+```
+make时可能出现opencv头文件找不到报错，不用理会，不影响下面测试与使用
 
 4.  测试运行程序，将看到图像，证明安装正确
+```bash
+./preview
+```
 
-   ```bash
-   ./preview
-   ```
-
-   
 
 ## 2. 外部触发程序
 
